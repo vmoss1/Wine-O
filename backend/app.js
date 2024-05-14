@@ -6,12 +6,15 @@ const csurf = require("csurf");
 const helmet = require("helmet");
 const cookieParser = require("cookie-parser");
 const { environment } = require("./config");
+const { ValidationError } = require("sequelize");
+
 const isProduction = environment === "production";
 
 const app = express();
 
 app.use(morgan("dev"));
 app.use(cookieParser());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Security Middleware
