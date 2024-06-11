@@ -1,47 +1,31 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
-import OpenModalButton from "../OpenModalButton/OpenModalButton";
-import LoginFormModal from "../LoginFormModal/LoginFormModal";
-import SignupFormModal from "../SignupFormModal/SignupFormModal";
+// import { PiWineDuotone } from "react-icons/pi";
 import "./Navigation.css";
 
 function Navigation({ isLoaded }) {
   const sessionUser = useSelector((state) => state.session.user);
 
-  let sessionLinks;
-  if (sessionUser) {
-    sessionLinks = (
-      <li>
-        <ProfileButton user={sessionUser} />
-      </li>
-    );
-  } else {
-    sessionLinks = (
-      <>
-        <li>
-          <OpenModalButton
-            buttonText="Log In"
-            modalComponent={<LoginFormModal />}
-          />
-        </li>
-        <li>
-          <OpenModalButton
-            buttonText="Sign Up"
-            modalComponent={<SignupFormModal />}
-          />
-        </li>
-      </>
-    );
-  }
-
   return (
-    <ul>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      {isLoaded && sessionLinks}
-    </ul>
+    <nav>
+      <div>
+        <div id="nav-logo-container">
+          <NavLink id="nav-logo" to="/">
+            <img id="nav-wine-logo" src="./public/wineologo.png" alt="" />
+          </NavLink>
+          {sessionUser && (
+            <>
+              <Link to={"/"} id="home-button">
+                Create
+              </Link>
+            </>
+          )}
+        </div>
+      </div>
+
+      {isLoaded && <ProfileButton user={sessionUser} />}
+    </nav>
   );
 }
 

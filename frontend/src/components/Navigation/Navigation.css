@@ -1,0 +1,232 @@
+@import url("https://fonts.cdnfonts.com/css/encode-sans-sc");
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#nav-wine-logo {
+  max-width: 15em;
+}
+
+.profile-button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.profile-button {
+  border: none;
+  background-color: white;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  height: 40px;
+  margin-right: 20px;
+  border: #a23e48 solid 2px;
+}
+
+.errors {
+  color: red;
+}
+
+.profile-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px rgb(146, 182, 177);
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+#profile-button {
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  padding-top: 8%;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(146, 182, 177);
+  color: white;
+  border: 2px #ffffff solid;
+}
+
+#my-button {
+  text-decoration: none;
+  color: rgb(146, 182, 177);
+  font-size: 1.25rem;
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 13px;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+#my-button:hover {
+  box-shadow: 0 0 10px 1px rgb(146, 182, 177);
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+#home-button {
+  text-decoration: none;
+  color: rgb(146, 182, 177);
+  font-size: 1.25rem;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+#home-button:hover {
+  box-shadow: 0 0 10px 1px rgb(146, 182, 177);
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+#ul-dropdown {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 5px;
+  gap: 5px;
+  justify-content: center;
+  width: 100px;
+  align-items: center;
+  margin-top: 5px;
+  border: 2px rgb(146, 182, 177) solid;
+}
+
+#ul-names {
+  font-family: "Encode Sans SC", sans-serif;
+  align-self: center;
+  margin-top: 5px;
+}
+
+#toggle-theme-button {
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  align-self: flex-start;
+  border-radius: 10px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+#toggle-theme-button:hover {
+  background-color: rgb(146, 182, 177);
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+#logout-button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  align-self: flex-start;
+  border-radius: 10px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+#logout-button:hover {
+  background-color: #8c1c1c;
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+#currentlyIn {
+  font-size: 0.75rem;
+  margin-right: 65px;
+}
+
+.profile-dropdown {
+  display: flex;
+  z-index: 99;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#profile-button-dropdown {
+  z-index: 99;
+  position: fixed;
+  top: 8%;
+  right: 0%;
+  margin-right: 10px;
+}
+
+#nav-logo-container {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+.login-signup-buttons {
+  display: flex;
+  gap: 25px;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+#nav-login-button {
+  color: #a23e48;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 0px;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+#nav-signup-button {
+  font-size: 1rem;
+  margin: 0px;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.modal-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px rgb(146, 182, 177);
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    z-index: 100;
+  }
+  #ul-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 100;
+  }
+}
