@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as sessionActions from "../../store/session";
 // import OpenModalButton from "../OpenModalButton";
-// import LoginFormPage from "../LoginFormPage";
-// import SignupFormPage from "../SignupFormPage";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Navigation.css";

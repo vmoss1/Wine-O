@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
-// import { PiWineDuotone } from "react-icons/pi";
 import "./Navigation.css";
 
 function Navigation({ isLoaded }) {
