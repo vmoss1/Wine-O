@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
+import { motion } from "framer-motion";
 import "./Navigation.css";
 
 function Navigation({ isLoaded }) {
@@ -9,7 +10,7 @@ function Navigation({ isLoaded }) {
   return (
     <nav>
       <div>
-        <div id="nav-logo-container">
+        <motion.div id="nav-logo-container" whileHover={{ rotate: 360 }}>
           <NavLink id="nav-logo" to="/">
             <img id="nav-wine-logo" src="./public/wineologo.png" alt="" />
           </NavLink>
@@ -20,7 +21,7 @@ function Navigation({ isLoaded }) {
               </Link>
             </>
           )}
-        </div>
+        </motion.div>
       </div>
 
       {isLoaded && <ProfileButton user={sessionUser} />}
