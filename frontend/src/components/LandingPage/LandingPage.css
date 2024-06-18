@@ -3,7 +3,6 @@
 #landing-page-container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 25%;
 }
 
 button {
@@ -12,14 +11,14 @@ button {
 }
 
 #lp-login-h2 {
-  font-size: 2.5em;
+  font-size: 2.7em;
   font-family: "superhelio _small", sans-serif;
   color: rgb(149, 115, 242);
   cursor: pointer;
 }
 
 #lp-signup-h2 {
-  font-size: 2.5em;
+  font-size: 2.7em;
   font-family: "superhelio _small", sans-serif;
   color: rgb(149, 115, 242);
   cursor: pointer;
