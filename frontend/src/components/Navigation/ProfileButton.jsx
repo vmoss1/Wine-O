@@ -72,20 +72,6 @@ function ProfileButton({ user }) {
           </ul>
         )}
       </div>
-      {/* {!user && (
-        <div className="login-signup-buttons">
-          <OpenModalButton
-            buttonText={<p id="nav-login-button">Log in</p>}
-            onItemClick={closeMenu}
-            modalComponent={<LoginFormPage />}
-          />
-          <OpenModalButton
-            buttonText={<p id="nav-signup-button">Sign up</p>}
-            onItemClick={closeMenu}
-            modalComponent={<SignupFormPage />}
-          />
-        </div>
-      )} */}
     </div>
   );
 }
