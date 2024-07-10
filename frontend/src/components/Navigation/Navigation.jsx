@@ -10,7 +10,7 @@ function Navigation({ isLoaded }) {
   return (
     <nav>
       <div>
-        <motion.div id="nav-logo-container" whileHover={{ rotate: 360 }}>
+        <motion.div id="nav-logo-container" whileHover={{ scale: 1.2 }}>
           <NavLink id="nav-logo" to="/">
             <img id="nav-wine-logo" src="./public/wineologo.png" alt="" />
           </NavLink>

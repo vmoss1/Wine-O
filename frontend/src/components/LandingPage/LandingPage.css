@@ -1,8 +1,30 @@
 @import url("https://fonts.cdnfonts.com/css/superhelio");
 
+#landing-page-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1f112d;
+  height: 37rem;
+}
+
 #landing-page-container {
   display: flex;
   justify-content: space-evenly;
+}
+
+#landing-page-h3 {
+  font-size: 1.5rem;
+  color: white;
+  /* font-family: "superhelio _small", sans-serif; */
+  margin-left: 4rem;
+  margin-right: 4rem;
+  text-align: center;
+}
+
+#landing-page-wine-image {
+  height: 35em;
+  border-radius: 10em;
 }
 
 button {
