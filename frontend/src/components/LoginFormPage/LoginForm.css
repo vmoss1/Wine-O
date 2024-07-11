@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5rem;
+  gap: 15px;
 }
 
 #login-form-form {
@@ -10,5 +12,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 1em; */
+  gap: 5px;
+}
+
+#login-form-button {
+  border: 1px black solid;
+  margin-top: 15px;
 }

@@ -1,9 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/encode-sans-sc");
 
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-around;
+  align-items: center; */
   margin-bottom: 10px;
   margin-right: 10px;
 }

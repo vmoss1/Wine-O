@@ -27,7 +27,9 @@ function LoginFormPage() {
   return (
     <>
       <div id="login-form-container">
-        <h1>Welcome Back!</h1>
+        <div id="login-form-welcome-container">
+          <h1>Welcome Back!</h1>
+        </div>
         <div id="login-form-form">
           <form id="login-form-form" onSubmit={handleSubmit}>
             Username or Email
@@ -49,7 +51,9 @@ function LoginFormPage() {
               />
             </label>
             {errors.credential && <p>{errors.credential}</p>}
-            <button type="submit">Log In</button>
+            <button id="login-form-button" type="submit">
+              Log In
+            </button>
           </form>
         </div>
       </div>
