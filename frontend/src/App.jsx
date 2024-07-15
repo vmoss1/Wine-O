@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Modal } from "./context/Modal";
 import Navigation from "./components/Navigation/Navigation";
 import LandingPage from "./components/LandingPage";
+import MainPage from "./components/MainPage";
 import * as sessionActions from "./store/session";
 
 function Layout() {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/wines",
-        element: <LandingPage />,
+        element: <MainPage />,
       },
     ],
   },

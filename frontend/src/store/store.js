@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 import sessionReducer from "./session";
+import wineReducer from "./wine";
 
 // Define the root reducer
 const rootReducer = {
   session: sessionReducer,
+  wines: wineReducer,
 };
 
 // Configure the store with Redux Toolkit
@@ -15,5 +17,3 @@ const mainStore = configureStore({
 });
 
 export default mainStore;
-
-

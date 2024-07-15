@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import { motion } from "framer-motion";
@@ -24,13 +24,6 @@ function Navigation({ isLoaded }) {
           <NavLink id="nav-logo" to="/">
             <img id="nav-wine-logo" src="./public/wineologo.png" alt="" />
           </NavLink>
-          {sessionUser && (
-            <>
-              <Link to={"/"} id="home-button">
-                Create
-              </Link>
-            </>
-          )}
         </motion.div>
 
         <motion.div id="lp-signup-container" whileHover={{ scale: 1.1 }}>
