@@ -13,25 +13,29 @@ function Navigation({ isLoaded }) {
   return (
     <nav>
       <div id="landing-page-container">
-        <motion.div id="lp-login-container" whileHover={{ scale: 1.1 }}>
-          <OpenModalButton
-            buttonText={<h2 id="lp-login-h2">Login</h2>}
-            modalComponent={<LoginFormPage />}
-          />
-        </motion.div>
+        {!sessionUser && (
+          <motion.div id="lp-login-container" whileHover={{ scale: 1.1 }}>
+            <OpenModalButton
+              buttonText={<h2 id="lp-login-h2">Login</h2>}
+              modalComponent={<LoginFormPage />}
+            />
+          </motion.div>
+        )}
 
         <motion.div id="nav-logo-container" whileHover={{ scale: 1.2 }}>
-          <NavLink id="nav-logo" to="/">
+          <NavLink id="nav-logo" to="/wines">
             <img id="nav-wine-logo" src="./public/wineologo.png" alt="" />
           </NavLink>
         </motion.div>
 
-        <motion.div id="lp-signup-container" whileHover={{ scale: 1.1 }}>
-          <OpenModalButton
-            buttonText={<h2 id="lp-signup-h2">Signup</h2>}
-            modalComponent={<SignupFormPage />}
-          />
-        </motion.div>
+        {!sessionUser && (
+          <motion.div id="lp-signup-container" whileHover={{ scale: 1.1 }}>
+            <OpenModalButton
+              buttonText={<h2 id="lp-signup-h2">Signup</h2>}
+              modalComponent={<SignupFormPage />}
+            />
+          </motion.div>
+        )}
       </div>
       {isLoaded && <ProfileButton user={sessionUser} />}
     </nav>

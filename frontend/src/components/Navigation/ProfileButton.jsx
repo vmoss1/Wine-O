@@ -46,8 +46,8 @@ function ProfileButton({ user }) {
     <div className="profile-dropdown-container">
       {user && (
         <div className="profile-button-container">
-          <Link to={"/myProfile"} id="my-button">
-            MyProfile
+          <Link to={"/"} id="my-button">
+            My List
           </Link>
           <button onClick={toggleMenu} className="profile-button">
             <img id="user-photo" src={sessionUser?.profilePicture} alt="" />
